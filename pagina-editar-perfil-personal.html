@@ -1,0 +1,131 @@
+<html lang="pt-br" dir="ltr">
+    <head>
+        <title>Editar Perfil Personal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/pagina-editar-perfil-personal.css">
+    </head>
+    <body>
+
+        <header>
+            <img src="assets/img/logo.png" alt="logo"  height="70px">
+            <nav>
+                <a href="dashboard.html">Inicio</a>
+                <a href="dashboard.html">Sobre nós</a>
+                <a href="dashboard.html">Contatos</a>
+                <section class="perfil">
+                    <img src="assets/img/foto-perfil.png" alt="foto-de-perfil" class="foto">
+                    <a href="pagina-editar-perfil-personal.html">Olá,Lucas!</a>
+                    <img src="assets/img/icone-seta-baixo.png" alt="seta-para-baixo">
+                </section>
+            </nav>
+        </header>
+
+    
+    <main>
+        <section>
+            <h3>Editar perfil</h3>
+            <p>Atualize suas informações pessoais</p>
+
+            <form class="formularios">
+                <fieldset class="juntos">
+
+                    <div class="nome">
+                        <img src="assets/img/icone-nome.png" alt="icone-nome">
+                        <input type="text" name="nome" placeholder="Nome completo" required/>
+                    </div>
+
+                    <div class="email">
+                        <img src="assets/img/icone-email-form.png" alt="icone-email">
+                        <input type="email" name="email" placeholder="E-mail" required/>
+                    </div>
+
+                    <div class="senha">
+                        <img src="assets/img/icone-senha.png" alt="icone-senha">
+                        <input type="password" name="senha" placeholder="Senha" maxlength="9" required/>
+                    </div>
+
+                    <div class="idade">
+                        <img src="assets/img/idade.png" alt="icone-idade">
+                        <input type="number"  name="idade" placeholder="Idade" required/>
+                    </div>
+
+                    <div class="peso-altura">
+                    
+                        <input type="number" name="telefone" placeholder="Telefone" required>
+                        <input type="number"  name="horario" placeholder="Horários Disponíveis " required>
+                    </div>
+
+                    <div class="objetivo">
+                        <img src="assets/img/icone-especialidade.png" alt="icone-especialidade">
+                        <input type="text"  name="especialidade" placeholder="Especialidade" required>
+                    </div>
+
+                    <div class="botao">
+                        <a href="dashboard.html" class="btn">SALVAR</a>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+
+          <!-- LOGO + COPYRIGHT -->
+          <div class="rodape__marca">
+            <a href="#" class="rodape__logo">
+              <img src="assets/img/logo.png" alt="GymFORMA" />
+            </a>
+
+            <p class="rodape__direitos">
+              © 2026 GymFORMA. Todos os direitos reservados.
+            </p>
+          </div>
+
+          <!-- CONTATO -->
+          <div class="rodape__contato">
+            <h4 class="rodape__titulo">Contato</h4>
+
+            <ul class="rodape__lista">
+              <li>
+                <img src="assets/img/localizacao-footer.png" alt="Nossa localização" />
+                <span>Cidade das Academias</span>
+              </li>
+
+              <li>
+                <img src="assets/img/telefone-footer.png" alt="Nosso telefone" />
+                <span>(00) 99999-9999</span>
+              </li>
+
+              <li>
+                <img src="assets/img/email-footer.png" alt="Nosso email" />
+                <span>contato@gymforma.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- REDES SOCIAIS -->
+          <div class="rodape__redes">
+            <h4 class="rodape__titulo">Siga-nos</h4>
+
+            <div class="rodape__redes-lista">
+              <a href="#" class="rodape__rede">
+                <img class="rodape__rede-img" src="assets/img/intagram.png" />
+              </a>
+
+              <a href="#" class="rodape__rede">
+                <img class="rodape__rede-img" src="assets/img/whatsapp.png" alt="WhatsApp" />
+              </a>
+
+              <a href="#" class="rodape__rede">
+                <img class="rodape__rede-img" src="assets/img/youtube.png" alt="YouTube" />
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+    </body>
+</html>
