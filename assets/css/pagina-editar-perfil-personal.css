@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+:root {
+    --cor-principal: #FF5C00;
+    --texto-principal: #f4f4f5;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+/* ===================== HEADER ===================== */
+
+header{
+    background-color: black;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 10px;
+    gap: 12px;
+}
+
+header h3{
+    color: var(--texto-principal);
+    font-size: 1.5em;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    font-weight: 500;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.perfil a{
+    margin-top: 10px;
+}
+
+.perfil img{
+    width: 30px;
+}
+
+.perfil .foto{
+    width: 50px;
+}
+
+.btn{
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    transition: all 0.6s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--texto-principal);
+    border: 2px solid var(--texto-principal);
+}
+
+/* ===================== BANNER ===================== */
+
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cor-fundo-secundaria);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+h3{
+    font-size: 48px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+}
+
+/* ===================== FORMULÁRIO ===================== */
+
+.formularios {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1272px;
+    margin: 40px auto;
+}
+
+.juntos {
+    padding: 0 20px;
+}
+
+.nome{
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 1126px;
+}
+
+.email{
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 1126px;
+}
+
+.senha{
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 1126px;
+}
+
+.idade{
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 1126px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 0 16px 0 52px;
+    margin-top: 0;
+}
+
+/* ===================== PESO E ALTURA ===================== */
+
+.peso-altura {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+    background-color: transparent;
+}
+
+.peso-altura input {
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    padding: 0 16px;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    max-width: 557px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* ===================== OBJETIVO ===================== */
+
+.objetivo {
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    width: 100%;
+    max-width: 1129px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.objetivo input {
+    padding-left: 52px;
+}
+
+/* ===================== BOTÃO ===================== */
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.botao a{
+    color: var(--cor-principal);
+}
+
+.botao .btn{
+    transition: none;
+}
+
+.botao .btn:hover{
+    background-color: var(--cor-principal);
+    color: white;
+    border: 2px solid transparent;
+}
+
+/* ===================== ÍCONES DO FORMULÁRIO ===================== */
+
+.juntos img{
+    width: 29px;
+    height: 26px;
+    position: absolute;
+    left: 16px;
+}
+
+/* ===================== RODAPÉ ===================== */
+
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 40px;
+}
+
+.rodape__conteudo {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* LOGO + COPYRIGHT */
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+/* CONTATO */
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+}
+
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* REDES SOCIAIS */
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    min-width: 140px;
+}
+
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+    header h3{
+        font-size: 1.2em;
+    }
+
+    nav{
+        gap: 30px;
+    }
+
+    h3{
+        font-size: 38px;
+    }
+
+    .formularios{
+        padding: 24px;
+        margin: 30px auto;
+    }
+
+    .juntos{
+        padding: 0 10px;
+    }
+
+    .rodape__conteudo{
+        padding: 32px 40px 28px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    nav{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    h3{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    p{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .formularios{
+        padding: 20px 16px;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+
+    .juntos{
+        padding: 0 4px;
+    }
+
+    .nome,
+    .email,
+    .senha,
+    .idade,
+    .objetivo{
+        max-width: 100%;
+        height: 44px;
+    }
+
+    .peso-altura input{
+        max-width: 100%;
+        height: 44px;
+    }
+
+    input{
+        font-size: 14px;
+    }
+
+    .rodape__conteudo{
+        padding: 28px 24px;
+        gap: 28px;
+    }
+}
+
+/* Mobile grande */
+@media (max-width: 520px) {
+    header{
+        padding: 12px 16px;
+        gap: 10px;
+    }
+
+    header h3{
+        font-size: 1em;
+    }
+
+    nav{
+        gap: 14px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .formularios{
+        padding: 16px 10px;
+        margin: 16px auto;
+    }
+
+    .juntos{
+        padding: 0;
+    }
+
+    .nome,
+    .email,
+    .senha,
+    .idade,
+    .objetivo{
+        height: 42px;
+    }
+
+    input{
+        font-size: 13px;
+        padding: 0 12px 0 44px;
+    }
+
+    .juntos img{
+        width: 22px;
+        height: 20px;
+        left: 10px;
+    }
+
+    .peso-altura{
+        flex-direction: column;
+    }
+
+    .peso-altura input{
+        min-width: unset;
+        width: 100%;
+        height: 42px;
+        font-size: 13px;
+        padding: 0 12px;
+    }
+
+    .botao{
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+
+    .rodape__conteudo{
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    .rodape__logo img{
+        width: 150px;
+    }
+
+    .rodape__lista li{
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 360px) {
+    header h3{
+        font-size: 0.9em;
+    }
+
+    nav{
+        gap: 10px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .formularios{
+        padding: 12px 8px;
+    }
+
+    input{
+        font-size: 12px;
+    }
+
+    .nome,
+    .email,
+    .senha,
+    .idade,
+    .objetivo{
+        height: 40px;
+    }
+
+    .peso-altura input{
+        height: 40px;
+    }
+}

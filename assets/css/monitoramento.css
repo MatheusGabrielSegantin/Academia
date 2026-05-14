@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #FF5C00;
+    --texto-principal: #f4f4f5;
+    --cor-fundo: #161718;
+    --cor-segundario: #A3A3A3;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+}
+
+/* ===================== HEADER ===================== */
+ 
+header{
+    color: white;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 10px;
+    gap: 12px;
+}
+ 
+header img{
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+ 
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+ 
+header nav a{
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.perfil a{
+    margin-top: 10px;
+}
+ 
+.perfil img{
+    width: 30px;
+}
+ 
+.perfil .foto{
+    width: 50px;
+}
+
+/* ===================== TÍTULO ===================== */
+
+.t {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.t h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--cor-principal);
+}
+
+.t p {
+    font-size: 50px;
+    color: var(--texto-principal);
+}
+
+/* ===================== LISTA DE ALUNOS ===================== */
+
+.alunos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    
+    
+    border-radius: 16px;
+    padding: 20px;
+    width: 48%;
+    min-width: 260px;
+    flex: 1;
+    height: 151px;
+}
+
+.perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.perfil-nome-linha {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil-nome-linha h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+.ativo {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4ade80;
+    background-color: #1a3d2b;
+    padding: 2px 8px;
+    border-radius: 99px;
+}
+
+.data {
+    font-size: 14px;
+    color: var(--cor-segundario);
+}
+
+.perfil-vazio {
+    background-color: #1c1c1c;
+    border-color: #222;
+}
+
+.perfil-vazio h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-segundario);
+}
+
+.avatar-vazio {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+/* ===================== RODAPÉ ===================== */
+
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 40px;
+}
+
+.rodape__conteudo {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* LOGO + COPYRIGHT */
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+/* CONTATO */
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+}
+
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* REDES SOCIAIS */
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    min-width: 140px;
+}
+
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+    nav{
+        gap: 30px;
+    }
+
+    .t h1 {
+        font-size: 40px;
+    }
+
+    .t p {
+        font-size: 40px;
+    }
+
+    .rodape__conteudo{
+        padding: 32px 40px 28px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    header img{
+        max-width: 200px;
+    }
+
+    nav{
+        gap: 20px;
+    }
+
+    .t h1 {
+        font-size: 32px;
+    }
+
+    .t p {
+        font-size: 32px;
+    }
+
+    .alunos{
+        gap: 20px;
+    }
+
+    .perfil{
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+    }
+
+    .rodape__conteudo{
+        padding: 28px 24px;
+        gap: 28px;
+    }
+}
+
+/* Mobile grande */
+@media (max-width: 520px) {
+    header{
+        padding: 12px 16px;
+    }
+
+    header img{
+        max-width: 160px;
+    }
+
+    nav{
+        gap: 14px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+
+    .t{
+        margin-top: 30px;
+        margin-bottom: 24px;
+    }
+
+    .t h1 {
+        font-size: 26px;
+    }
+
+    .t p {
+        font-size: 26px;
+    }
+
+    .alunos{
+        gap: 14px;
+        padding: 0 14px 40px;
+    }
+
+    .perfil{
+        gap: 14px;
+        padding: 16px;
+    }
+
+    .perfil img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .avatar-vazio{
+        width: 70px;
+        height: 70px;
+    }
+
+    .perfil-nome-linha h2{
+        font-size: 16px;
+    }
+
+    .ativo{
+        font-size: 12px;
+    }
+
+    .data{
+        font-size: 13px;
+    }
+
+    .rodape__conteudo{
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    .rodape__logo img{
+        width: 150px;
+    }
+
+    .rodape__lista li{
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 360px) {
+    .t h1 {
+        font-size: 22px;
+    }
+
+    .t p {
+        font-size: 22px;
+    }
+
+    .perfil img{
+        width: 56px;
+        height: 56px;
+    }
+
+    .avatar-vazio{
+        width: 56px;
+        height: 56px;
+    }
+
+    .perfil-nome-linha h2{
+        font-size: 14px;
+    }
+
+    .data{
+        font-size: 12px;
+    }
+}

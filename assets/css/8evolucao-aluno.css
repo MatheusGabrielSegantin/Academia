@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #FF5C00;
+    --texto-principal: #f4f4f5;
+    --cor-fundo: #161718;
+    --cor-segundario: #A3A3A3;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    font-family: var(--fonte);
+}
+
+/* ========== HEADER ========== */
+header{
+    background-color: black;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+nav{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: white;
+    font-weight: 500;
+}
+
+.btn{
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: 2px solid;
+    transition: all 0.6s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--texto-principal);
+    border: 2px solid var(--texto-principal);
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+           
+    a{
+        margin-top: 10px;
+    }
+    img{
+        width: 30px;
+    }
+    .foto{
+        width: 50px;
+    }
+           
+           
+}
+/* ========== BANNER ========== */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.t1{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.t1 h1{
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--texto-principal);
+}
+
+.t1 p{
+    font-size: 15px;
+    color: var(--texto-principal);
+}
+
+.linha{
+    display: flex;
+    gap: 6px;
+}
+
+.img1{
+    height: 200px;
+    max-width: 100%;
+}
+
+/* ========== COLUNAS ========== */
+.colunas{
+    display: flex;
+    gap: 40px;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+    min-width: 280px;
+    width: 100%;
+}
+
+.t-secao{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--texto-principal);
+}
+
+/* ========== CARDS ========== */
+.cards-grid{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.card-med{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: var(--cor-fundo);
+    border-radius: 12px;
+    padding: 16px;
+    flex: 1;
+    min-width: 140px;
+    width: 100%;
+}
+
+.icone{
+    width: 36px;
+    height: 36px;
+}
+
+.card-nome{
+    font-size: 13px;
+    color: var(--cor-segundario);
+}
+
+.card-valor{
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--texto-principal);
+}
+
+.card-diff{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.card-negativo,
+.card-positivo{
+    color: var(--cor-principal);
+}
+
+.card-desde{
+    font-size: 12px;
+    color: var(--cor-segundario);
+    margin-top: 6px;
+}
+
+/* ========== GRÁFICO ========== */
+.grafico{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.img2{
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ========== REGISTROS ========== */
+.registros{
+    background-color: var(--cor-fundo);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registros2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.registros-t{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+.ver-todos{
+    font-size: 13px;
+    color: var(--cor-principal);
+    font-weight: 600;
+}
+
+.registro-item{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.icone-reg{
+    width: 32px;
+    height: 32px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+}
+
+.r-nome{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--texto-principal);
+}
+
+.r-data{
+    font-size: 12px;
+    color: var(--cor-segundario);
+}
+
+.r-valor{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+/* ========== RODAPÉ ========== */
+.rodape{
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--cor-principal);
+    font-family: var(--fonte);
+    margin-top: 60px;
+}
+
+.rodape__conteudo{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.rodape__marca{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__logo{
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+.rodape__contato{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__titulo{
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--cor-principal);
+    margin-bottom: 16px;
+}
+
+.rodape__lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.rodape__redes{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    min-width: 150px;
+}
+
+.rodape__redes-lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede{
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--cor-principal);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede:hover{
+    background: var(--cor-principal);
+    transform: translateY(-2px);
+}
+
+.rodape__rede-img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* ========== TABLET: até 900px ========== */
+@media (max-width: 900px) {
+    header{
+        justify-content: center;
+        padding: 15px 20px;
+    }
+
+    nav{
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 30px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .t1 h1{
+        font-size: 36px;
+    }
+
+    .colunas{
+        padding: 30px 30px;
+        gap: 30px;
+    }
+
+    .coluna{
+        min-width: 100%;
+    }
+
+    .card-med{
+        min-width: 140px;
+    }
+
+    .rodape__conteudo{
+        padding: 32px 30px;
+        gap: 30px;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes{
+        min-width: 100%;
+    }
+}
+
+/* ========== MOBILE: até 600px ========== */
+@media (max-width: 600px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    nav{
+        gap: 20px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+
+    .banner{
+        padding: 20px 15px;
+    }
+
+    .t1 h1{
+        font-size: 26px;
+    }
+
+    .t1 p{
+        font-size: 14px;
+    }
+
+    .img1{
+        height: 120px;
+    }
+
+    .colunas{
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .coluna{
+        min-width: 100%;
+        gap: 16px;
+    }
+
+    .t-secao{
+        font-size: 20px;
+    }
+
+    .cards-grid{
+        gap: 10px;
+    }
+
+    .card-med{
+        min-width: 120px;
+        padding: 12px;
+    }
+
+    .card-valor{
+        font-size: 18px;
+    }
+
+    .registros{
+        padding: 15px;
+    }
+
+    .rodape__conteudo{
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes{
+        min-width: 100%;
+    }
+
+    .rodape__logo img{
+        width: 150px;
+    }
+
+    .rodape__lista li{
+        font-size: 0.8rem;
+    }
+
+    .rodape__rede{
+        width: 38px;
+        height: 38px;
+    }
+
+    .rodape__rede-img{
+        width: 18px;
+        height: 18px;
+    }
+}

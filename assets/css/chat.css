@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ 
+:root{
+    --cor-fundo:#000000;
+    --cor-principal:#FF5C00;
+    --cor-texto-2:#FFFFFF;
+    --cor-borda:#313131;
+    --cor-rodape:#2D2D2D;
+    --cor-fundo-4:#242222;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+ 
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-fundo);
+    margin: 0;
+}
+ 
+/* ===================== HEADER ===================== */
+ 
+header{
+    background-color: var(--cor-fundo);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 10px;
+    gap: 12px;
+}
+ 
+header img{
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+ 
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+ 
+header nav a{
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.perfil a{
+    margin-top: 10px;
+}
+ 
+.perfil img{
+    width: 30px;
+}
+ 
+.perfil .foto{
+    width: 50px;
+}
+ 
+/* ===================== TÍTULOS ===================== */
+ 
+h1{
+    color: #FF5C00;
+    font-size: 70px;
+    margin: 0;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0 20px;
+}
+ 
+p{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 0;
+    padding: 0 20px;
+}
+ 
+/* ===================== CONTAINER DE CHAT ===================== */
+ 
+.container-chat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px 60px;
+}
+ 
+.coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 620px;
+}
+ 
+/* ===================== CARD DE CHAT ===================== */
+ 
+.card-chat{
+    width: 100%;
+    min-height: 120px;
+    background-color: #151618;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+}
+ 
+.foto{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+ 
+.texto-chat{
+    margin-left: 20px;
+    flex: 1;
+    min-width: 0;
+}
+ 
+.texto-chat h2{
+    color: white;
+    font-size: 22px;
+    a{
+        color: white;
+    }
+    
+}
+ 
+.texto-chat p{
+    color: #A0A0A0;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+    padding: 0;
+    margin-left: 0;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ 
+.nome-status{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.bolinha{
+    width: 10px;
+    height: 10px;
+    background-color: #6DFF33;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+ 
+.lado-direito{
+    margin-left: auto;
+    align-self: flex-start;
+    flex-shrink: 0;
+}
+ 
+.lado-direito span{
+    color: #B3B3B3;
+    font-size: 16px;
+}
+ 
+.hoje{
+    background-color: #4D6F34;
+    color: white !important;
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+ 
+/* ===================== RODAPÉ ===================== */
+ 
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 60px;
+}
+ 
+.rodape__conteudo {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+ 
+/* LOGO + COPYRIGHT */
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+ 
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+ 
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+ 
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+ 
+/* CONTATO */
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+}
+ 
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+ 
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+ 
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+ 
+/* REDES SOCIAIS */
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    min-width: 140px;
+}
+ 
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+ 
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+ 
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+ 
+/* ===================== RESPONSIVO ===================== */
+ 
+/* Tablet grande */
+@media (max-width: 1024px) {
+    header img{
+        max-width: 220px;
+    }
+ 
+    header nav{
+        gap: 20px;
+    }
+ 
+    h1{
+        font-size: 56px;
+        margin-top: 60px;
+    }
+ 
+    p{
+        font-size: 28px;
+    }
+ 
+    .container-chat{
+        gap: 16px;
+    }
+ 
+    .rodape__conteudo{
+        padding: 32px 40px 28px;
+    }
+}
+ 
+/* Tablet */
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+ 
+    header img{
+        max-width: 200px;
+    }
+ 
+    header nav{
+        gap: 16px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+ 
+    h1{
+        font-size: 44px;
+        margin-top: 40px;
+    }
+ 
+    p{
+        font-size: 22px;
+    }
+ 
+    .container-chat{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 16px 40px;
+    }
+ 
+    .coluna{
+        width: 100%;
+        max-width: 100%;
+        min-width: unset;
+    }
+ 
+    .card-chat{
+        margin-top: 0;
+    }
+ 
+    .rodape__conteudo{
+        padding: 28px 24px;
+        gap: 28px;
+    }
+}
+ 
+/* Mobile grande */
+@media (max-width: 520px) {
+    header{
+        padding: 12px 16px;
+    }
+ 
+    header img{
+        max-width: 160px;
+    }
+ 
+    header nav{
+        gap: 12px;
+    }
+ 
+    header nav a{
+        font-size: 14px;
+    }
+ 
+    h1{
+        font-size: 34px;
+        margin-top: 30px;
+    }
+ 
+    p{
+        font-size: 18px;
+    }
+ 
+    .foto{
+        width: 60px;
+        height: 60px;
+    }
+ 
+    .texto-chat{
+        margin-left: 14px;
+    }
+ 
+    .texto-chat h2{
+        font-size: 18px;
+    }
+ 
+    .texto-chat p{
+        font-size: 14px;
+        margin-top: 8px;
+    }
+ 
+    .lado-direito span{
+        font-size: 13px;
+    }
+ 
+    .hoje{
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+ 
+    .rodape__conteudo{
+        padding: 24px 16px;
+        gap: 24px;
+    }
+ 
+    .rodape__logo img{
+        width: 150px;
+    }
+ 
+    .rodape__lista li{
+        font-size: 0.8rem;
+    }
+}
+ 
+/* Mobile pequeno */
+@media (max-width: 360px) {
+    h1{
+        font-size: 28px;
+    }
+ 
+    p{
+        font-size: 15px;
+    }
+ 
+    .foto{
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
+ 
+    .texto-chat h2{
+        font-size: 15px;
+    }
+ 
+    .texto-chat p{
+        font-size: 13px;
+    }
+ 
+    .card-chat{
+        padding: 14px;
+    }
+}

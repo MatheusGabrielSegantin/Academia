@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+    --cor-fundo: #000000;
+    --cor-texto-2: #ffffff;
+    --cor-principal: #FF5C00;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--cor-fundo);
+    color: #ffffff;
+}
+
+/* ========== HEADER ========== */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    min-height: 80px;
+    gap: 16px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header__logo img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+
+header nav a {
+    color: var(--cor-texto-2);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: var(--laranja);
+}
+
+/* Botão "Entrar" laranja dentro do nav */
+.header__btn {
+    background-color: var(--laranja);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px 22px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid var(--laranja);
+}
+
+.header__btn:hover {
+    background-color: transparent;
+    color: var(--cor-texto-2);
+    border: 2px solid var(--cor-texto-2);
+}
+
+/* ========== MAIN ========== */
+main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 16px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 span {
+    color: var(--laranja);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #2a2a2a;
+    margin-bottom: 1rem;
+}
+
+/* ========== PERFIL DO ALUNO ========== */
+.perfil-aluno {
+    border-radius: 14px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.perfil-aluno img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.perfil-aluno strong {
+    font-size: 1.1rem;
+    display: block;
+}
+
+.perfil-aluno p {
+    font-size: .9rem;
+    color: #cccccc;
+}
+
+/* ========== INFO LISTA ========== */
+.info-lista {
+    background: #1a1a1a;
+    border-radius: 14px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-bottom: 1rem;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.info-item img {
+    width: 36px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.info-item strong {
+    color: var(--laranja);
+    font-size: .85rem;
+    display: block;
+}
+
+.info-item p {
+    font-size: .95rem;
+}
+
+/* ========== TABELA ========== */
+.dados {
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    border-radius: 14px;
+    overflow: hidden;
+    min-width: 280px;
+}
+
+caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 1rem;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+caption h2 {
+    color: var(--laranja);
+    font-size: 1rem;
+}
+
+caption a {
+    color: #ffffff;
+    font-size: .85rem;
+}
+
+tr {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+td {
+    padding: .7rem 1rem;
+    font-size: .9rem;
+}
+
+.valor {
+    text-align: right;
+}
+
+/* ========== BOTÃO TREINO ========== */
+.btn-treino {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    background: var(--laranja);
+    color: #ffffff;
+    padding: .75rem 2.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+.btn-treino:hover {
+    background: var(--laranja-escuro);
+}
+
+/* ========== RODAPÉ ========== */
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 40px;
+}
+
+.rodape__conteudo {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 220px;
+    min-width: 200px;
+}
+
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 180px;
+    min-width: 160px;
+}
+
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 120px;
+    min-width: 100px;
+}
+
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ========== TABLET (até 1100px) ========== */
+@media (max-width: 1100px) {
+    header {
+        padding: 0 24px;
+        gap: 12px;
+    }
+
+    .header__logo img {
+        width: 160px;
+    }
+
+    header nav {
+        gap: 24px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .header__btn {
+        font-size: 14px;
+        padding: 7px 18px;
+    }
+
+    .rodape__conteudo {
+        padding: 36px 40px 28px;
+        gap: 32px;
+    }
+}
+
+/* ========== TABLET PEQUENO (até 800px) ========== */
+@media (max-width: 800px) {
+    header {
+        justify-content: space-between;
+        padding: 12px 20px;
+        min-height: unset;
+    }
+
+    .header__logo img {
+        width: 140px;
+    }
+
+    header nav {
+        gap: 16px;
+    }
+
+    main {
+        padding: 30px 16px 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========== CELULAR (até 600px) ========== */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        gap: 14px;
+        min-height: unset;
+    }
+
+    .header__logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header__logo img {
+        width: 140px;
+    }
+
+    header nav {
+        gap: 12px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header nav a {
+        font-size: 13px;
+    }
+
+    .header__btn {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+
+    main {
+        padding: 20px 12px 16px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .perfil-aluno {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: .8rem 1rem;
+    }
+
+    .perfil-aluno img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .info-lista {
+        padding: .8rem 1rem;
+    }
+
+    .info-item {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    td {
+        font-size: .82rem;
+        padding: .6rem .8rem;
+    }
+
+    caption h2 {
+        font-size: .9rem;
+    }
+
+    caption a {
+        font-size: .78rem;
+    }
+
+    .btn-treino {
+        width: 100%;
+        text-align: center;
+        padding: .75rem 1rem;
+    }
+
+    .rodape__conteudo {
+        padding: 24px 16px 20px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes {
+        width: 100%;
+        flex: 1 1 100%;
+        min-width: unset;
+    }
+
+    .rodape__logo img {
+        width: 150px;
+    }
+
+    .rodape__rede {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rodape__rede-img {
+        width: 18px;
+        height: 18px;
+    }
+}

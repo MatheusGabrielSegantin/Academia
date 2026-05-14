@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #000000;
+    --cor-principal: #FF5C00;
+    --cor-texto-2: #FFFFFF;
+    --cor-borda: #313131;
+    --cor-rodape: #2D2D2D;
+    --cor-fundo-4: #242222;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-fundo);
+    margin: 0;
+}
+
+ 
+/* ===================== HEADER ===================== */
+ 
+header{
+    background-color: var(--cor-fundo);
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    align-items: center;
+
+}
+ 
+header img{
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+ 
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+ 
+header nav a{
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.perfil a{
+    margin-top: 60px;
+}
+ 
+.perfil img{
+    width: 30px;
+}
+ 
+.perfil .foto{
+    width: 50px;
+}
+
+/* ===================== TÍTULO ===================== */
+
+h1 {
+    color: #FF5C00;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ===================== BLOCOS ===================== */
+
+.container-pai {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.bloco {
+    width: 480px;
+    max-width: 100%;
+    height: 150px;
+    background: #1e1e1e;
+    margin-left: 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.juntos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.juntos img {
+    width: 80px;
+    height: 70px;
+}
+
+.juntos h2 {
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+}
+
+.txt {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+/* ===================== GRÁFICOS ===================== */
+
+.graficos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 80px;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.graficos img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+}
+
+/* ===================== LINKS ===================== */
+
+a {
+    font-size: 20px;
+    color: #FF5C00;
+    margin: 60px;
+    text-align: center;
+    
+}
+
+a img {
+    width: 80px;
+    height: 70px;
+}
+
+span {
+    display: block;
+}
+
+/* ===================== RODAPÉ ===================== */
+
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 60px;
+}
+
+.rodape__conteudo {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* LOGO + COPYRIGHT */
+
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+/* CONTATO */
+
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+}
+
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* REDES SOCIAIS */
+
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    min-width: 140px;
+}
+
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ===================== RESPONSIVO — TABLET (max 900px) ===================== */
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    header {
+        padding: 10px 20px;
+        justify-content: center;
+    }
+
+    header nav {
+        justify-content: center;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .perfil {
+        justify-content: center;
+    }
+
+    .container-pai {
+        justify-content: center;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .bloco {
+        width: 100%;
+        max-width: 480px;
+        margin-left: 0;
+        margin-top: 40px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .juntos h2 {
+        font-size: 22px;
+    }
+
+    .txt {
+        font-size: 28px;
+    }
+
+    .graficos {
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .graficos img {
+        max-width: 100%;
+    }
+
+    .rodape__conteudo {
+        padding: 30px 30px 24px;
+        gap: 30px;
+    }
+
+    a {
+        margin: 30px;
+        font-size: 18px;
+    }
+}
+
+/* ===================== RESPONSIVO — MOBILE (max 600px) ===================== */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+        margin-top: 16px;
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 16px;
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        gap: 10px;
+    }
+
+    header img {
+        max-width: 180px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 6px;
+        width: 100%;
+        align-items: center;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .perfil {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .perfil a {
+        margin-top: 6px;
+    }
+
+    .container-pai {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        gap: 16px;
+    }
+
+    .bloco {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 24px;
+        height: auto;
+        padding: 16px;
+    }
+
+    .juntos {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .juntos img {
+        width: 60px;
+        height: 52px;
+    }
+
+    .juntos h2 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .txt {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .graficos {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .graficos img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    a {
+        margin: 16px;
+        font-size: 15px;
+    }
+
+    a img {
+        width: 55px;
+        height: 48px;
+    }
+
+    .rodape__conteudo {
+        padding: 24px 16px 20px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .rodape__marca {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .rodape__logo img {
+        width: 150px;
+    }
+
+    .rodape__contato {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .rodape__redes {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .rodape__titulo {
+        font-size: 0.72rem;
+    }
+
+    .rodape__lista li {
+        font-size: 0.8rem;
+    }
+
+    .rodape__rede {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rodape__rede-img {
+        width: 18px;
+        height: 18px;
+    }
+}

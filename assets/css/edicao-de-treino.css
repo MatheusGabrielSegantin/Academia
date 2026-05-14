@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #000000;
+    --cor-principal: #FF5C00;
+    --cor-texto-2: #FFFFFF;
+    --cor-borda: #313131;
+    --cor-rodape: #2D2D2D;
+    --cor-fundo-4: #242222;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--cor-fundo);
+}
+
+/* ========== HEADER ========== */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 40px;
+    gap: 16px;
+}
+
+header img {
+    width: 150px;
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--laranja);
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.perfil .foto {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil img {
+    width: 16px;
+}
+
+/* ========== MAIN ========== */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========== TÍTULO ========== */
+
+.titulo {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.titulo h4 {
+    color: var(--texto-cinza);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.titulo h5 {
+    color: var(--texto-cinza);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.t-principal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+.diferente {
+    color: var(--cor-principal);
+}
+
+/* ========== CONTAINER DOS CARDS ========== */
+
+.todo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container1,
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 320px;
+    max-width: 700px;
+    gap: 20px;
+}
+
+/* ========== CARDS DE TREINO ========== */
+
+.treino1,
+.treino2,
+.treino3,
+.treino4 {
+    width: 100%;
+    max-width: 700px;
+    background-color: var(--cor-fundo-4);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 15px;
+}
+
+.treino1 img,
+.treino2 img,
+.treino3 img,
+.treino4 img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* ========== CONTEÚDO DO CARD ========== */
+
+.conteudo-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 180px;
+    min-width: 0;
+    gap: 8px;
+}
+
+.nome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.nome img {
+    width: 60px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.tipo h3 {
+    color: white;
+    font-size: 22px;
+}
+
+.tipo .diferente {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.conjunto {
+    margin-top: 10px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: var(--texto-cinza);
+    font-size: 14px;
+}
+
+.dados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    color: white;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* ========== BOTÃO ========== */
+
+.pai-botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.botao {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 12px 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 200px;
+    text-align: center;
+    transition: background-color 0.3s;
+    border: 2px solid var(--cor-principal);
+    cursor: pointer;
+    display: inline-block;
+}
+
+.botao:hover {
+    background-color: transparent;
+    color: var(--cor-texto-2);
+}
+
+/* ========== RODAPÉ ========== */
+
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 50px;
+}
+
+.rodape__conteudo {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 220px;
+    min-width: 200px;
+    gap: 20px;
+}
+
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+}
+
+.rodape__logo img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 180px;
+    min-width: 160px;
+}
+
+.rodape__titulo {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 120px;
+    min-width: 100px;
+}
+
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover {
+    background: var(--laranja);
+}
+
+/* ========== RESPONSIVO PARA NOTEBOOK / PC MENOR ========== */
+
+@media (max-width: 1200px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .container1,
+    .container2 {
+        max-width: 600px;
+    }
+
+    .treino1 img,
+    .treino2 img,
+    .treino3 img,
+    .treino4 img {
+        width: 130px;
+    }
+
+    .rodape__conteudo {
+        padding: 32px 40px 24px;
+    }
+}
+
+/* ========== RESPONSIVO PARA TABLET ========== */
+
+@media (max-width: 900px) {
+    header {
+        padding: 15px 24px;
+    }
+
+    nav {
+        gap: 22px;
+    }
+
+    .titulo {
+        margin-top: 45px;
+    }
+
+    .t-principal {
+        font-size: 34px;
+    }
+
+    .container1,
+    .container2 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .treino1,
+    .treino2,
+    .treino3,
+    .treino4 {
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+    }
+
+    .treino1 img,
+    .treino2 img,
+    .treino3 img,
+    .treino4 img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .conteudo-card {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nome {
+        justify-content: center;
+    }
+
+    .info {
+        justify-content: center;
+    }
+
+    .dados {
+        justify-content: center;
+    }
+
+    .rodape__conteudo {
+        padding: 30px 30px 24px;
+        gap: 30px;
+    }
+}
+
+/* ========== RESPONSIVO PARA CELULAR ========== */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    header img {
+        width: 130px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .perfil {
+        justify-content: center;
+    }
+
+    .titulo {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    .titulo h4 {
+        font-size: 13px;
+    }
+
+    .titulo h5 {
+        font-size: 12px;
+    }
+
+    .t-principal {
+        font-size: 26px;
+        gap: 6px;
+    }
+
+    .todo {
+        padding: 15px;
+        gap: 16px;
+    }
+
+    .treino1,
+    .treino2,
+    .treino3,
+    .treino4 {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .treino1 img,
+    .treino2 img,
+    .treino3 img,
+    .treino4 img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nome {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nome img {
+        width: 50px;
+    }
+
+    .tipo h3 {
+        font-size: 18px;
+    }
+
+    .tipo .diferente {
+        font-size: 14px;
+    }
+
+    .info {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .dados {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .pai-botao {
+        padding: 15px;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 320px;
+        min-width: 0;
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+
+    .rodape__conteudo {
+        padding: 24px 16px 20px;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes {
+        width: 100%;
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .rodape__logo img {
+        width: 150px;
+    }
+
+    .rodape__lista li {
+        font-size: 13px;
+    }
+
+    .rodape__rede {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rodape__rede-img {
+        width: 18px;
+        height: 18px;
+    }
+}

@@ -1,0 +1,575 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+}
+
+:root {
+    --cor-principal: #FF5C00;
+    --texto-principal: #f4f4f5;
+    --cor-rodape: #2D2D2D;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+/* ===================== HEADER ===================== */
+
+header {
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 10px;
+    gap: 12px;
+    color: var(--texto-branco);
+}
+
+header img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--texto-branco);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.perfil a {
+    margin-top: 10px;
+}
+
+.perfil img {
+    width: 30px;
+}
+
+.perfil .foto {
+    width: 50px;
+}
+
+/* ===================== BANNER ===================== */
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cor-fundo-secundaria);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+h3 {
+    font-size: 64px;
+    color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    color: white;
+}
+
+/* ===================== FORMULÁRIO ===================== */
+
+.formularios {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1272px;
+    margin: 40px auto;
+}
+
+.juntos {
+    padding: 0 40px;
+}
+
+.nome {
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 1126px;
+}
+
+.email {
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 1126px;
+}
+
+.senha {
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 1126px;
+}
+
+.idade {
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 1126px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 0 16px 0 52px;
+    margin-top: 0;
+}
+
+.peso-altura {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+    background-color: transparent;
+}
+
+.peso-altura input {
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    padding: 0 16px;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    max-width: 557px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.objetivo {
+    position: relative;
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    height: 47px;
+    width: 100%;
+    max-width: 1129px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.objetivo input {
+    padding-left: 52px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+button {
+    background-color: #FF5C00;
+    width: 100%;
+    max-width: 366px;
+    height: 48px;
+    border-radius: 9px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    
+    a{
+        color: var(--texto-branco);
+    }
+}
+
+.juntos img {
+    width: 29px;
+    height: 26px;
+    position: absolute;
+    left: 16px;
+}
+
+/* ===================== RODAPÉ ===================== */
+
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+}
+
+.rodape__conteudo {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* LOGO + COPYRIGHT */
+
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+/* CONTATO */
+
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+}
+
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* REDES SOCIAIS */
+
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    min-width: 140px;
+}
+
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ===================== RESPONSIVO — TABLET (max 900px) ===================== */
+
+@media (max-width: 900px) {
+    header {
+        padding: 10px 20px;
+        justify-content: center;
+    }
+
+    header nav {
+        justify-content: center;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .perfil {
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: 44px;
+        margin-left: 20px;
+    }
+
+    p {
+        font-size: 17px;
+        margin-left: 20px;
+    }
+
+    .formularios {
+        padding: 24px 16px;
+        margin: 24px auto;
+    }
+
+    .juntos {
+        padding: 0 16px;
+    }
+
+    .nome,
+    .email,
+    .senha,
+    .idade,
+    .objetivo {
+        max-width: 100%;
+    }
+
+    .peso-altura input {
+        max-width: 100%;
+    }
+
+    button {
+        max-width: 280px;
+        font-size: 17px;
+    }
+
+    .rodape__conteudo {
+        padding: 30px 30px 24px;
+        gap: 30px;
+    }
+}
+
+/* ===================== RESPONSIVO — MOBILE (max 600px) ===================== */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        padding: 10px 16px;
+        gap: 10px;
+    }
+
+    header img {
+        max-width: 180px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 6px;
+        width: 100%;
+        align-items: center;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .perfil {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .perfil a {
+        margin-top: 6px;
+    }
+
+    .banner {
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 0;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+
+    p {
+        font-size: 15px;
+        margin-left: 16px;
+    }
+
+    .formularios {
+        padding: 16px 10px;
+        margin: 16px auto;
+        border-radius: 8px;
+    }
+
+    .juntos {
+        padding: 0 8px;
+    }
+
+    .nome,
+    .email,
+    .senha,
+    .idade,
+    .objetivo {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .peso-altura {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .peso-altura input {
+        max-width: 100%;
+        width: 100%;
+        min-width: 0;
+    }
+
+    button {
+        max-width: 100%;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .botao {
+        margin-top: 24px;
+        padding: 0 8px;
+    }
+
+    .rodape__conteudo {
+        padding: 24px 16px 20px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .rodape__marca {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .rodape__logo img {
+        width: 150px;
+    }
+
+    .rodape__contato {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .rodape__redes {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .rodape__titulo {
+        font-size: 0.72rem;
+    }
+
+    .rodape__lista li {
+        font-size: 0.8rem;
+    }
+
+    .rodape__rede {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rodape__rede-img {
+        width: 18px;
+        height: 18px;
+    }
+}

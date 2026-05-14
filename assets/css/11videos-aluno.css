@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #000000;
+    --cor-principal: #FF5C00;
+    --cor-texto-2: #FFFFFF;
+    --cor-borda: #313131;
+    --cor-rodape: #2D2D2D;
+    --cor-fundo-4: #242222;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: var(--cor-fundo);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin-bottom: 50px;
+}
+
+header img {
+    width: 300px;
+    max-width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header nav .perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav .perfil a {
+    display: flex;
+    align-items: center;
+}
+
+header nav .perfil img {
+    width: 30px;
+}
+
+header nav .perfil .foto {
+    width: 50px;
+}
+
+/* ===== MAIN ===== */
+main {
+    padding: 0 16px;
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+.t {
+    padding: 20px 16px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.t h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--texto-branco);
+}
+
+.laranja {
+    color: var(--laranja);
+}
+
+/* ===== SEÇÃO DE VÍDEOS DESTAQUE ===== */
+.videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 16px;
+}
+
+.video2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--cor-fundo-4);
+    border-radius: 12px;
+    padding: 0 0 16px;
+    width: 48%;
+    min-width: 280px;
+    flex: 1 1 280px;
+}
+
+.exerc {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.exerc img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+}
+
+.video2 h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--texto-branco);
+    padding: 8px 12px 0;
+}
+
+.categoria {
+    font-size: 13px;
+    color: var(--texto-cinza);
+    padding: 0 12px;
+}
+
+.nivel {
+    font-size: 13px;
+    color: var(--texto-branco);
+    padding: 0 12px;
+}
+
+/* ===== SUBTÍTULO DA LISTA ===== */
+.t2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--texto-branco);
+    padding: 10px 16px;
+}
+
+/* ===== LISTA DE VÍDEOS ===== */
+.videos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 16px 40px;
+}
+
+.video-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--cor-fundo-4);
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+
+.video-mini {
+    position: relative;
+    width: 80px;
+    height: 54px;
+    flex-shrink: 0;
+}
+
+.video-mini img {
+    width: 80px;
+    height: 54px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.video-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1 1 150px;
+}
+
+.item-nome {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.item-cat {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.item-nivel {
+    font-size: 12px;
+    color: var(--texto-cinza);
+}
+
+.coracao {
+    font-size: 30px;
+    color: var(--laranja);
+    flex-shrink: 0;
+}
+
+/* ===== RODAPÉ ===== */
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 50px;
+}
+
+.rodape__conteudo {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 220px;
+    min-width: 200px;
+}
+
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 180px;
+    min-width: 160px;
+}
+
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 120px;
+    min-width: 100px;
+}
+
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablet — até 900px */
+@media (max-width: 900px) {
+    header {
+        padding: 15px 24px;
+        margin-bottom: 30px;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    header nav {
+        gap: 24px;
+    }
+
+    .t h1 {
+        font-size: 28px;
+    }
+
+    .videos {
+        padding: 16px 12px;
+        gap: 16px;
+    }
+
+    .video2 {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .rodape__conteudo {
+        padding: 32px 40px 24px;
+        gap: 32px;
+    }
+}
+
+/* Mobile — até 600px */
+@media (max-width: 600px) {
+    header {
+        padding: 12px 16px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    header img {
+        width: 160px;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin: 0;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    header nav .perfil img {
+        width: 24px;
+    }
+
+    header nav .perfil .foto {
+        width: 38px;
+    }
+
+    .t {
+        padding: 12px 12px 8px;
+    }
+
+    .t h1 {
+        font-size: 22px;
+    }
+
+    .t2 {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+    .videos {
+        flex-direction: column;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .video2 {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .exerc {
+        height: 160px;
+    }
+
+    .videos-lista {
+        padding: 0 12px 30px;
+        gap: 8px;
+    }
+
+    .video-item {
+        padding: 10px 10px;
+        gap: 10px;
+    }
+
+    .video-mini {
+        width: 70px;
+        height: 48px;
+    }
+
+    .video-mini img {
+        width: 70px;
+        height: 48px;
+    }
+
+    .item-nome {
+        font-size: 13px;
+    }
+
+    .item-cat,
+    .item-nivel {
+        font-size: 11px;
+    }
+
+    .coracao {
+        font-size: 22px;
+    }
+
+    .rodape__conteudo {
+        padding: 24px 16px 20px;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes {
+        width: 100%;
+        flex: 1 1 100%;
+        min-width: unset;
+    }
+
+    .rodape__logo img {
+        width: 150px;
+    }
+
+    .rodape__rede {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rodape__rede-img {
+        width: 18px;
+        height: 18px;
+    }
+}

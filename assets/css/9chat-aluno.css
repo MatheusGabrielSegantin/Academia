@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #FF5C00;
+    --texto-principal: #f4f4f5;
+    --cor-fundo: #161718;
+    --cor-segundario: #A3A3A3;
+    --laranja: #FF5C00;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    font-family: "Inter", sans-serif;
+}
+
+/* ===================== HEADER ===================== */
+ 
+header{
+   color: var(--texto-branco);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 10px;
+    gap: 12px;
+}
+ 
+header img{
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+ 
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+ 
+header nav a{
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.perfil a{
+    margin-top: 10px;
+}
+ 
+.perfil img{
+    width: 30px;
+}
+ 
+.perfil .foto{
+    width: 50px;
+}
+
+
+/* ========== CONVERSA ========== */
+.conversa{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    gap: 40px;
+    min-height: 600px;
+}
+
+.t1{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    min-width: 260px;
+}
+
+.t1 h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--cor-principal);
+}
+
+.t1 p{
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--texto-principal);
+}
+
+/* ========== CHAT ========== */
+.chat{
+    width: 100%;
+    max-width: 550px;
+    min-width: 280px;
+    background-color: #0d0d0d;
+    border-radius: 16px;
+}
+
+.chat-header{
+    background-color: var(--cor-fundo);
+    min-height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 0 24px;
+    border-radius: 16px 16px 0 0;
+}
+
+.foto{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chat-t{
+    color: var(--texto-principal);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.mensagens{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+}
+
+.msg-esquerda{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.msg-direita{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.balao{
+    background-color: var(--cor-segundario);
+    border-radius: 12px;
+    padding: 10px 14px;
+    max-width: 70%;
+}
+
+.msg-direita .balao{
+    background-color: var(--cor-principal);
+    border: none;
+}
+
+.nome{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.t{
+    color: var(--texto-principal);
+    font-size: 14px;
+}
+
+.horario{
+    color: #CDCDCD;
+    font-size: 11px;
+    text-align: right;
+    margin-top: 7px;
+}
+
+/* ========== RODAPÉ ========== */
+.rodape{
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 60px;
+}
+
+.rodape__conteudo{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.rodape__marca{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__logo{
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+.rodape__contato{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__titulo{
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.rodape__redes{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    min-width: 150px;
+}
+
+.rodape__redes-lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede{
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede:hover{
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+.rodape__rede-img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* ========== TABLET: até 900px ========== */
+@media (max-width: 900px) {
+    header{
+        justify-content: center;
+        padding: 15px 20px;
+    }
+
+    header img{
+        max-width: 220px;
+    }
+
+    nav{
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .conversa{
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .t1 h1{
+        font-size: 36px;
+    }
+
+    .t1 p{
+        font-size: 36px;
+    }
+
+    .chat{
+        max-width: 100%;
+    }
+
+    .rodape__conteudo{
+        padding: 32px 30px;
+        gap: 30px;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes{
+        min-width: 100%;
+    }
+}
+
+/* ========== MOBILE: até 600px ========== */
+@media (max-width: 600px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header img{
+        max-width: 180px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+
+    .conversa{
+        flex-direction: column;
+        padding: 30px 15px;
+        gap: 24px;
+        min-height: 0;
+        align-items: flex-start;
+    }
+
+    .t1{
+        min-width: 100%;
+    }
+
+    .t1 h1{
+        font-size: 26px;
+    }
+
+    .t1 p{
+        font-size: 26px;
+    }
+
+    .chat{
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .chat-header{
+        padding: 0 16px;
+    }
+
+    .chat-t{
+        font-size: 18px;
+    }
+
+    .mensagens{
+        padding: 16px;
+    }
+
+    .nome{
+        font-size: 15px;
+    }
+
+    .t{
+        font-size: 13px;
+    }
+
+    .rodape__conteudo{
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes{
+        min-width: 100%;
+    }
+
+    .rodape__logo img{
+        width: 150px;
+    }
+
+    .rodape__lista li{
+        font-size: 0.8rem;
+    }
+
+    .rodape__rede{
+        width: 38px;
+        height: 38px;
+    }
+
+    .rodape__rede-img{
+        width: 18px;
+        height: 18px;
+    }
+}

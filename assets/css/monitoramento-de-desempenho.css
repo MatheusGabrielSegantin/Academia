@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-fundo:#000000;
+    --cor-principal:#FF5C00;
+    --cor-texto-2:#FFFFFF;
+    --cor-borda:#313131;
+    --cor-rodape:#2D2D2D;
+    --cor-fundo-4:#242222;
+    --cor-texto-4:#A3A3A3;
+    --cor-destaque:#6BBA4A;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+/* ===================== HEADER ===================== */
+
+header{
+    background-color: var(--cor-fundo);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 10px;
+    gap: 12px;
+}
+
+header img{
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+header nav a{
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.perfil a{
+    margin-top: 10px;
+}
+
+.perfil img{
+    width: 30px;
+}
+
+.perfil .foto{
+    width: 50px;
+}
+
+/* ===================== MAIN — TÍTULO ===================== */
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+    color: var(--cor-texto-2);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.titulo .diferente{
+    color: var(--cor-principal);
+    font-size: 45px;
+}
+
+/* ===================== MAIN — NAV ABAS ===================== */
+
+main nav{
+    background-color: var(--cor-fundo-4);
+    width: 100%;
+    max-width: 1310px;
+    min-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto 0;
+    padding: 4px 0;
+}
+
+main nav a{
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--cor-texto-4);
+    margin: 8px 20px;
+}
+
+main nav .selecionado{
+    color: var(--cor-principal);
+}
+
+/* ===================== MAIN — GRID DE CARDS ===================== */
+
+.todo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    padding: 0 10px 40px;
+}
+
+.todo img{
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px;
+    max-width: 720px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px;
+    max-width: 720px;
+}
+
+/* ===================== CARDS DE ALUNO ===================== */
+
+.aluno1,
+.aluno2,
+.aluno3,
+.aluno4,
+.aluno5,
+.aluno6{
+    
+    min-height: 120px;
+    background-color: var(--cor-fundo-4);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px 25px;
+}
+
+/* conteúdo interno dos cards com nome/info */
+.aluno1 .todo,
+.aluno2 .todo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 25px;
+}
+
+.aluno1 .nome,
+.aluno2 .nome{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--cor-texto-2);
+    font-size: 22px;
+    text-align: center;
+    gap: 25px;
+    font-weight: normal;
+}
+
+.aluno1 .destaque,
+.aluno2 .destaque{
+    color: var(--cor-destaque);
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.aluno1 .info,
+.aluno2 .info{
+    color: var(--cor-texto-4);
+    font-size: 18px;
+    text-align: center;
+}
+
+.aluno1 .info p,
+.aluno2 .info p{
+    margin-top: 20px;
+}
+
+.aluno3 p,
+.aluno4 p,
+.aluno5 p,
+.aluno6 p{
+    color: var(--cor-texto-2);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    padding: 20px 0;
+}
+
+/* ===================== RODAPÉ ===================== */
+
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 40px;
+}
+
+.rodape__conteudo {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* LOGO + COPYRIGHT */
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+/* CONTATO */
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+}
+
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* REDES SOCIAIS */
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    min-width: 140px;
+}
+
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+    header img{
+        max-width: 220px;
+    }
+
+    header nav{
+        gap: 20px;
+    }
+
+    .titulo{
+        font-size: 26px;
+    }
+
+    .titulo .diferente{
+        font-size: 36px;
+    }
+
+    .aluno1,
+    .aluno2,
+    .aluno3,
+    .aluno4,
+    .aluno5,
+    .aluno6{
+        margin: 12px 16px;
+    }
+
+    .rodape__conteudo{
+        padding: 32px 40px 28px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    header img{
+        max-width: 200px;
+    }
+
+    header nav{
+        gap: 16px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .titulo{
+        font-size: 22px;
+        margin-top: 16px;
+    }
+
+    .titulo .diferente{
+        font-size: 30px;
+    }
+
+    main nav{
+        justify-content: flex-start;
+        padding: 4px 10px;
+    }
+
+    main nav a{
+        font-size: 14px;
+        margin: 6px 12px;
+    }
+
+    .todo{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 16px 40px;
+    }
+
+    .container1,
+    .container2{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .aluno1,
+    .aluno2,
+    .aluno3,
+    .aluno4,
+    .aluno5,
+    .aluno6{
+        margin: 10px 0;
+    }
+
+    .todo img{
+        width: 160px;
+    }
+
+    .rodape__conteudo{
+        padding: 28px 24px;
+        gap: 28px;
+    }
+}
+
+/* Mobile grande */
+@media (max-width: 520px) {
+    header{
+        padding: 12px 16px;
+    }
+
+    header img{
+        max-width: 160px;
+    }
+
+    header nav{
+        gap: 12px;
+    }
+
+    header nav a{
+        font-size: 14px;
+    }
+
+    .titulo{
+        font-size: 18px;
+    }
+
+    .titulo .diferente{
+        font-size: 24px;
+    }
+
+    main nav a{
+        font-size: 13px;
+        margin: 5px 10px;
+    }
+
+    .aluno1 .nome,
+    .aluno2 .nome{
+        font-size: 18px;
+        gap: 14px;
+    }
+
+    .aluno1 .destaque,
+    .aluno2 .destaque{
+        font-size: 15px;
+    }
+
+    .aluno1 .info,
+    .aluno2 .info{
+        font-size: 15px;
+    }
+
+    .aluno3 p,
+    .aluno4 p,
+    .aluno5 p,
+    .aluno6 p{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    .todo img{
+        width: 120px;
+    }
+
+    .rodape__conteudo{
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    .rodape__logo img{
+        width: 150px;
+    }
+
+    .rodape__lista li{
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 360px) {
+    .titulo{
+        font-size: 16px;
+    }
+
+    .titulo .diferente{
+        font-size: 20px;
+    }
+
+    .aluno1 .nome,
+    .aluno2 .nome{
+        font-size: 15px;
+    }
+
+    .aluno3 p,
+    .aluno4 p,
+    .aluno5 p,
+    .aluno6 p{
+        font-size: 13px;
+        margin-left: 12px;
+    }
+
+    main nav a{
+        font-size: 12px;
+        margin: 4px 8px;
+    }
+
+    .todo img{
+        width: 90px;
+    }
+}

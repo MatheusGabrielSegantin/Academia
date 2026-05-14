@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-fundo: #000000;
+    --cor-principal: #FF5C00;
+    --cor-texto-2: #FFFFFF;
+    --cor-borda: #313131;
+    --cor-fundo-4: #242222;
+    --cor-rodape: #2D2D2D;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+/* ========== HEADER ========== */
+header{
+    background-color: var(--cor-fundo);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header img{
+    width: 100%;
+    max-width: 280px;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav a{
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header nav .perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+header nav .perfil a{
+    margin-top: 0;
+}
+
+header nav .perfil img{
+    width: 30px;
+    max-width: 30px;
+}
+
+header nav .perfil .foto{
+    width: 50px;
+    max-width: 50px;
+}
+
+/* ========== MAIN ========== */
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- TODO1: banner --- */
+main .todo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .todo1 .banner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 20px;
+    color: var(--cor-texto-2);
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 0;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+main .todo1 .banner img{
+    width: 100%;
+    max-width: 500px;
+}
+
+main .todo1 .banner .titulo{
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    min-width: 260px;
+}
+
+main .todo1 .banner .titulo .diferente{
+    color: var(--cor-principal);
+}
+
+main .todo1 .banner .titulo p{
+    font-size: 18px;
+    color: var(--cor-texto-2);
+}
+
+/* --- TODO2: cards --- */
+main .todo2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+main .todo2 img{
+    width: 100px;
+    margin: 20px;
+}
+
+main .todo2 .container1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+main .todo2 .container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+/* Cards individuais */
+main .todo2 .container1 .pendente,
+main .todo2 .container1 .videos,
+main .todo2 .container2 .badges,
+main .todo2 .container2 .feed{
+    width: 100%;
+    max-width: 400px;
+    min-width: 260px;
+    height: 280px;
+    background-color: var(--cor-fundo-4);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+main .todo2 .container1 .pendente .titulo,
+main .todo2 .container1 .videos .titulo,
+main .todo2 .container2 .badges .titulo,
+main .todo2 .container2 .feed .titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+}
+
+main .todo2 .container1 .pendente .titulo .definicao,
+main .todo2 .container1 .videos .titulo .definicao,
+main .todo2 .container2 .badges .titulo .definicao,
+main .todo2 .container2 .feed .titulo .definicao{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--cor-texto-2);
+    gap: 15px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+main .todo2 .container1 .pendente .titulo .definicao a,
+main .todo2 .container1 .videos .titulo .definicao a,
+main .todo2 .container2 .badges .titulo .definicao a,
+main .todo2 .container2 .feed .titulo .definicao a{
+    color: var(--cor-texto-2);
+}
+
+main .todo2 .container1 .pendente .titulo .definicao p,
+main .todo2 .container1 .videos .titulo .definicao p,
+main .todo2 .container2 .badges .titulo .definicao p,
+main .todo2 .container2 .feed .titulo .definicao p{
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--cor-texto-2);
+}
+
+main .todo2 .container1 .pendente .titulo .definicao p .diferente,
+main .todo2 .container1 .videos .titulo .definicao p .diferente,
+main .todo2 .container2 .badges .titulo .definicao p .diferente,
+main .todo2 .container2 .feed .titulo .definicao p .diferente{
+    color: var(--cor-principal);
+}
+
+/* Card pendente tem fonte maior */
+main .todo2 .container1 .pendente .titulo .definicao{
+    font-size: 24px;
+}
+
+main .todo2 .container1 .pendente .titulo .definicao p{
+    font-size: 20px;
+}
+
+/* ========== RODAPÉ ========== */
+.rodape{
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+}
+
+.rodape__conteudo{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.rodape__marca{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__logo{
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+.rodape__contato{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__titulo{
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.rodape__redes{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    min-width: 150px;
+}
+
+.rodape__redes-lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede{
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover{
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablet: até 900px */
+@media (max-width: 900px) {
+    header{
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header img{
+        max-width: 220px;
+    }
+
+    header nav{
+        gap: 20px;
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    main .todo1 .banner{
+        margin-top: 40px;
+        font-size: 28px;
+    }
+
+    main .todo1 .banner img{
+        max-width: 100%;
+    }
+
+    main .todo1 .banner .titulo{
+        min-width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    main .todo2 .container1,
+    main .todo2 .container2{
+        margin: 10px;
+    }
+
+    main .todo2 .container1 .pendente,
+    main .todo2 .container1 .videos,
+    main .todo2 .container2 .badges,
+    main .todo2 .container2 .feed{
+        max-width: 100%;
+        min-width: 220px;
+    }
+
+    .rodape__conteudo{
+        padding: 32px 30px;
+        gap: 30px;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes{
+        min-width: 100%;
+    }
+}
+
+/* Mobile: até 600px */
+@media (max-width: 600px) {
+    header{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    header img{
+        max-width: 180px;
+    }
+
+    header nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav a{
+        font-size: 14px;
+    }
+
+    main .todo1 .banner{
+        margin-top: 25px;
+        font-size: 22px;
+        padding: 0 10px;
+    }
+
+    main .todo1 .banner img{
+        display: none;
+    }
+
+    main .todo1 .banner .titulo p{
+        font-size: 15px;
+    }
+
+    main .todo2{
+        padding: 10px;
+    }
+
+    main .todo2 img{
+        width: 70px;
+        margin: 10px;
+    }
+
+    main .todo2 .container1,
+    main .todo2 .container2{
+        margin: 5px;
+        width: 100%;
+    }
+
+    main .todo2 .container1 .pendente,
+    main .todo2 .container1 .videos,
+    main .todo2 .container2 .badges,
+    main .todo2 .container2 .feed{
+        max-width: 100%;
+        min-width: unset;
+        width: 100%;
+        margin: 8px 0;
+        height: auto;
+        min-height: 160px;
+        padding: 15px;
+    }
+
+    main .todo2 .container1 .pendente .titulo .definicao{
+        font-size: 18px;
+    }
+
+    main .todo2 .container1 .pendente .titulo .definicao p{
+        font-size: 15px;
+    }
+
+    main .todo2 .container1 .videos .titulo .definicao,
+    main .todo2 .container2 .badges .titulo .definicao,
+    main .todo2 .container2 .feed .titulo .definicao{
+        font-size: 16px;
+    }
+
+    main .todo2 .container1 .videos .titulo .definicao p,
+    main .todo2 .container2 .badges .titulo .definicao p,
+    main .todo2 .container2 .feed .titulo .definicao p{
+        font-size: 13px;
+    }
+
+    .rodape__conteudo{
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .rodape__logo img{
+        width: 150px;
+    }
+
+    .rodape__lista li{
+        font-size: 0.8rem;
+    }
+
+    .rodape__rede{
+        width: 38px;
+        height: 38px;
+    }
+
+    .rodape__rede-img{
+        width: 18px;
+        height: 18px;
+    }
+}

@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor-principal: #FF5C00;
+    --texto-principal:#f4f4f5;
+    --cor-fundo: #161718;
+    --cor-segundario: #2A2A2A; 
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    font-family: var(--fonte);
+}
+
+/* ===================== HEADER ===================== */
+ 
+header{
+    background-color: var(--cor-fundo);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 10px;
+    gap: 12px;
+    color: var(--texto-branco);
+}
+ 
+header img{
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+ 
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+ 
+header nav a{
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.perfil a{
+    margin-top: 10px;
+}
+ 
+.perfil img{
+    width: 30px;
+}
+ 
+.perfil .foto{
+    width: 50px;
+}
+ 
+.img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.moca{
+    margin-left: 20px;
+}
+
+.t2{
+    color: white;
+    font-size: 40px;
+}
+
+.t3{
+    color: white;
+    font-size: 24px;
+}
+
+
+.conversa{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.conversa h2{
+    color: var(--texto-cinza);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.t{
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.msg1{
+    background-color: var(--texto-cinza); 
+    border-radius: 6px;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.msg2{
+    background-color: var(--texto-cinza); 
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.horario{
+    color: #CDCDCD;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* ===================== RODAPÉ ===================== */
+ 
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 60px;
+}
+ 
+.rodape__conteudo {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+ 
+/* LOGO + COPYRIGHT */
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+ 
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+ 
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+ 
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+ 
+/* CONTATO */
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+    color: var(--cor-principal);
+}
+ 
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+ 
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+ 
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+ 
+/* REDES SOCIAIS */
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    min-width: 140px;
+    color: var(--cor-principal);
+}
+ 
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+ 
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+ 
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ===================== 
+   TABLET
+===================== */
+@media (max-width: 900px){
+
+    header{
+        justify-content: center;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    .perfil{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .moca{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .msg1,
+    .msg2{
+        width: 90%;
+    }
+
+    .rodape__conteudo{
+        padding: 28px 24px;
+        gap: 28px;
+    }
+}
+
+
+/* ===================== 
+   CELULAR
+===================== */
+@media (max-width: 600px){
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        gap: 15px;
+    }
+
+    .t2{
+        font-size: 26px;
+    }
+
+    .t3{
+        font-size: 18px;
+    }
+
+    .msg1,
+    .msg2{
+        width: 95%;
+    }
+
+    .rodape__conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* /* ===================== 
+   NOTEBOOK
+===================== */
+/* @media (max-width: 1200px){
+
+    header{
+        padding: 15px 20px;
+    }
+
+    nav{
+        gap: 20px;
+    }
+
+    .msg1{
+        max-width: 700px;
+    }
+
+    .msg2{
+        max-width: 350px;
+    }
+
+    .rodape__conteudo{
+        gap: 20px;
+    }
+} */ 

@@ -1,0 +1,455 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #000000;
+    --cor-principal: #FF5C00;
+    --cor-texto-2: #FFFFFF;
+    --cor-borda: #313131;
+    --cor-rodape: #2D2D2D;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+/* ── HEADER ── */
+header {
+    background-color: var(--cor-fundo);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 10px;
+}
+
+header img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header nav .btn {
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: 2px solid var(--cor-principal);
+    transition: all 0.6s;
+}
+
+header nav .btn:hover {
+    background-color: transparent;
+    color: var(--cor-texto-2);
+    border: 2px solid var(--cor-texto-2);
+}
+
+/* ── MAIN ── */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* ── SEÇÃO TODO (banner principal) ── */
+main .todo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .todo img {
+    width: 100%;
+    max-width: 827px;
+    height: auto;
+}
+
+/* ── BANNER ── */
+main .todo .banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 15px;
+    color: var(--cor-texto-2);
+    font-size: 32px;
+    font-weight: bold;
+    
+}
+
+main .todo .banner img {
+    width: 100%;
+    max-width: 400px;
+    width: 600px;
+}
+
+main .todo .banner .titulo {
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+}
+
+main .todo .banner .titulo .diferente {
+    color: var(--cor-principal);
+}
+
+main .todo .banner .titulo .botao {
+    text-align: center;
+    width: 100%;
+}
+
+main .todo .banner .titulo .botao .btn {
+    background-color: var(--cor-principal);
+    width: 100%;
+    max-width: 400px;
+    height: 70px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-top: 40px;
+}
+
+main .todo .banner .titulo .botao a {
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    color: var(--cor-texto-2);
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+/* ── SOBRE NÓS ── */
+main .sobre-nos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 30px;
+    
+}
+
+main .sobre-nos .todo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+main .sobre-nos .todo img {
+    width: 100%;
+    max-width: 400px;
+    width: 600px;
+    margin-left: 30px;
+}
+
+main .sobre-nos .todo .texto {
+    margin-top: 60px;
+    gap: 15px;
+    color: var(--cor-texto-2);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 40px 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 560px;
+}
+
+main .sobre-nos .todo .texto .diferente {
+    color: var(--cor-principal);
+}
+
+main .sobre-nos .todo .texto p {
+    color: var(--cor-principal);
+    font-size: 18px;
+}
+
+/* ── RODAPÉ ── */
+.rodape {
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+}
+
+.rodape__conteudo {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+/* LOGO + COPYRIGHT */
+.rodape__marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1 1 240px;
+    min-width: 200px;
+}
+
+.rodape__logo {
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+/* CONTATO */
+.rodape__contato {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.rodape__titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* REDES SOCIAIS */
+.rodape__redes {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 140px;
+    min-width: 120px;
+}
+
+.rodape__redes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede {
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover {
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ── RESPONSIVO: tablet ── */
+@media (max-width: 900px) {
+    header {
+        padding: 15px 20px;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    header img {
+        max-width: 220px;
+    }
+
+    header nav {
+        gap: 20px;
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    main .todo .banner {
+        font-size: 26px;
+        margin-left: 0;
+        padding: 0 16px;
+        justify-content: center;
+    }
+
+    main .todo .banner img {
+        max-width: 100%;
+    }
+
+    main .todo .banner .titulo {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    main .todo .banner .titulo .botao .btn {
+        font-size: 20px;
+        height: 60px;
+    }
+
+    main .sobre-nos .todo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .sobre-nos .todo .texto {
+        font-size: 26px;
+        max-width: 100%;
+        margin: 24px 16px;
+    }
+
+    .rodape__conteudo {
+        padding: 32px 30px;
+        gap: 30px;
+    }
+}
+
+/* ── RESPONSIVO: mobile ── */
+@media (max-width: 560px) {
+    header {
+        padding: 12px 16px;
+    }
+
+    header img {
+        max-width: 160px;
+    }
+
+    header nav {
+        gap: 14px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    main .todo .banner {
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        padding: 0 12px;
+    }
+
+    main .todo .banner .titulo {
+        margin: 12px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .todo .banner .titulo .botao .btn {
+        font-size: 18px;
+        height: 52px;
+        max-width: 100%;
+        margin-top: 24px;
+    }
+
+    main .sobre-nos .todo .texto {
+        font-size: 20px;
+        margin: 16px 12px;
+    }
+
+    main .sobre-nos .todo .texto p {
+        font-size: 15px;
+    }
+
+    .rodape__conteudo {
+        padding: 24px 16px;
+        gap: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes {
+        min-width: unset;
+        width: 100%;
+    }
+}

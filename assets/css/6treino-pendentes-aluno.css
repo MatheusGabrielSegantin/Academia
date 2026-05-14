@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-fundo: #000000;
+    --cor-principal: #FF5C00;
+    --cor-texto-2: #FFFFFF;
+    --cor-borda: #313131;
+    --cor-rodape: #2D2D2D;
+    --cor-fundo-4: #242222;
+    --laranja: #FF5C00;
+    --laranja-escuro: #cc4900;
+    --fundo-rodape: #1e1e1e;
+    --texto-branco: #ffffff;
+    --texto-cinza: #888888;
+    --fonte: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-fundo);
+    margin: 0;
+}
+
+/* ========== HEADER ========== */
+header{
+    background-color: var(--cor-fundo);
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header img{
+    width: 100%;
+    max-width: 280px;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav a{
+    color: var(--cor-texto-2);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header nav .perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+header nav .perfil a{
+    margin-top: 0;
+}
+
+header nav .perfil img{
+    width: 30px;
+    max-width: 30px;
+}
+
+header nav .perfil .foto{
+    width: 50px;
+    max-width: 50px;
+}
+
+/* ========== TOPO ========== */
+.topo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 30px;
+    gap: 20px;
+}
+
+.titulo h1{
+    color: white;
+    font-size: 60px;
+    margin-left: 0;
+}
+
+.titulo span{
+    color: #FF5C00;
+}
+
+.titulo p{
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+.data{
+    width: 114px;
+    height: 73px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.calendario{
+    width: 22px;
+    height: 22px;
+}
+
+.texto-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hoje{
+    color: #FF5C00;
+    font-size: 12px;
+    margin: 0;
+}
+
+.data h2{
+    color: white;
+    font-size: 22px;
+    margin: 0;
+}
+
+.data span{
+    color: #A0A0A0;
+    font-size: 12px;
+}
+
+/* ========== BARRA PROGRESSO ========== */
+.barra-container{
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.barra-container h3{
+    color: white;
+    margin-bottom: 15px;
+}
+
+.barra{
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.barracolorida{
+    width: 70%;
+    height: 100%;
+    background-color: #FF5C00;
+}
+
+.informacao{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.informacao p{
+    color: white;
+    font-size: 14px;
+}
+
+.informacao span{
+    color: #FF5C00;
+    margin-left: 5px;
+}
+
+.linha{
+    width: 1px;
+    height: 20px;
+    background-color: #777;
+}
+
+.informacao h4{
+    color: var(--cor-texto-2);
+    margin-left: auto;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+   a{
+    color: var(--cor-texto-2);
+   }
+
+}
+
+/* ========== QUADRADOS ========== */
+.quadrados{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.quadrados .quadrado{
+    width: 100%;
+    max-width: 415px;
+    height: 45px;
+    background-color: black;
+    border: 0.5px solid white;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* ========== TREINOS ========== */
+.todo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    margin-top: 80px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.todo img{
+    width: 220px;
+    max-width: 100%;
+    margin: 10px;
+}
+
+.todo .container1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo .container1 .treino1,
+.todo .container1 .treino2,
+.todo .container1 .treino3{
+    width: 100%;
+    max-width: 690px;
+    min-width: 0;
+    background-color: var(--cor-fundo-4);
+    border-radius: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 25px 10px;
+    position: relative;
+}
+
+.todo .container1 .treino1 .todo,
+.todo .container1 .treino2 .todo,
+.todo .container1 .treino3 .todo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 25px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.todo .container1 .treino1 .todo .nome,
+.todo .container1 .treino2 .todo .nome,
+.todo .container1 .treino3 .todo .nome{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.todo .container1 .treino1 .todo .nome .tipo,
+.todo .container1 .treino2 .todo .nome .tipo,
+.todo .container1 .treino3 .todo .nome .tipo{
+    display: flex;
+    flex-direction: column;
+}
+
+.todo .container1 .treino1 .todo .nome .tipo h3,
+.todo .container1 .treino2 .todo .nome .tipo h3,
+.todo .container1 .treino3 .todo .nome .tipo h3{
+    color: var(--cor-texto-2);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.todo .container1 .treino1 .todo .nome .tipo .diferente,
+.todo .container1 .treino2 .todo .nome .tipo .diferente,
+.todo .container1 .treino3 .todo .nome .tipo .diferente{
+    color: var(--cor-principal);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.todo .container1 .treino1 .todo .nome img,
+.todo .container1 .treino2 .todo .nome img,
+.todo .container1 .treino3 .todo .nome img{
+    width: 98px;
+    max-width: 98px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.todo .container1 .treino1 .todo .conjunto,
+.todo .container1 .treino2 .todo .conjunto,
+.todo .container1 .treino3 .todo .conjunto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--cor-texto-2);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.todo .container1 .treino1 .todo .conjunto .info,
+.todo .container1 .treino2 .todo .conjunto .info,
+.todo .container1 .treino3 .todo .conjunto .info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.todo .container1 .treino1 .todo .conjunto .dados,
+.todo .container1 .treino2 .todo .conjunto .dados,
+.todo .container1 .treino3 .todo .conjunto .dados{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* ========== RODAPÉ (baseado na página 5) ========== */
+.rodape{
+    width: 100%;
+    background-color: var(--fundo-rodape);
+    border-top: 3px solid var(--laranja);
+    font-family: var(--fonte);
+    margin-top: 60px;
+}
+
+.rodape__conteudo{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 80px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.rodape__marca{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__logo{
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.rodape__logo img{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.rodape__direitos{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--texto-cinza);
+    letter-spacing: 0.02em;
+}
+
+.rodape__contato{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+.rodape__titulo{
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 16px;
+}
+
+.rodape__lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape__lista li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--texto-branco);
+}
+
+.rodape__lista img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.rodape__redes{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    min-width: 150px;
+}
+
+.rodape__redes-lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape__rede{
+    width: 46px;
+    height: 46px;
+    border: 2px solid var(--laranja);
+    border-radius: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rodape__rede-img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.rodape__rede:hover{
+    background: var(--laranja);
+    transform: translateY(-2px);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablet: até 900px */
+@media (max-width: 900px) {
+    header{
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header img{
+        max-width: 220px;
+    }
+
+    header nav{
+        gap: 20px;
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .topo{
+        padding: 0 20px;
+    }
+
+    .titulo h1{
+        font-size: 42px;
+    }
+
+    .barra-container{
+        margin-top: 40px;
+    }
+
+    .todo{
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    .todo img{
+        width: 160px;
+    }
+
+    .todo .container1 .treino1,
+    .todo .container1 .treino2,
+    .todo .container1 .treino3{
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    .rodape__conteudo{
+        padding: 32px 30px;
+        gap: 30px;
+    }
+
+    .rodape__marca,
+    .rodape__contato,
+    .rodape__redes{
+        min-width: 100%;
+    }
+}
+
+/* Mobile: até 600px */
+@media (max-width: 600px) {
+    header{
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+    }
+
+    header img{
+        max-width: 180px;
+    }
+
+    header nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav a{
+        font-size: 14px;
+    }
+
+    .topo{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25px;
+        padding: 0 15px;
+    }
+
+    .titulo h1{
+        font-size: 30px;
+    }
+
+    .titulo p{
+        font-size: 14px;
+    }
+
+    .barra-container{
+        margin-top: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 18px;
+    }
+
+    .informacao{
+        gap: 12px;
+    }
+
+    .informacao p{
+        font-size: 12px;
+    }
+
+    .quadrados{
+        padding: 0 10px;
+    }
+
+    .quadrados .quadrado{
+        font-size: 18px;
+        height: auto;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .todo{
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+
+    .todo img{
+        width: 100px;
+        margin: 8px auto;
+    }
+
+    .todo .container1 .treino1,
+    .todo .container1 .treino2,
+    .todo .container1 .treino3{
+        max-width: 100%;
+        margin: 12px 0;
+        padding: 15px;
+    }
+
+    .todo .container1 .treino1 .todo,
+    .todo .container1 .treino2 .todo,
+    .todo .container1 .treino3 .todo{
+        margin: 10px;
+    }
+
+    .todo .container1 .treino1 .todo .nome .tipo h3,
+    .todo .container1 .treino2 .todo .nome .tipo h3,
+    .todo .container1 .treino3 .todo .nome .tipo h3{
+        font-size: 22px;
+    }
+
+    .todo .container1 .treino1 .todo .nome .tipo .diferente,
+    .todo .container1 .treino2 .todo .nome .tipo .diferente,
+    .todo .container1 .treino3 .todo .nome .tipo .diferente{
+        font-size: 17px;
+    }
+
+    .todo .container1 .treino1 .todo .conjunto,
+    .todo .container1 .treino2 .todo .conjunto,
+    .todo .container1 .treino3 .todo .conjunto{
+        font-size: 15px;
+    }
+
+    .todo .container1 .treino1 .todo .conjunto .info,
+    .todo .container1 .treino2 .todo .conjunto .info,
+    .todo .container1 .treino3 .todo .conjunto .info{
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .todo .container1 .treino1 .todo .conjunto .dados,
+    .todo .container1 .treino2 .todo .conjunto .dados,
+    .todo .container1 .treino3 .todo .conjunto .dados{
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .todo .container1 .treino1 .todo .nome img,
+    .todo .container1 .treino2 .todo .nome img,
+    .todo .container1 .treino3 .todo .nome img{
+        display: none;
+    }
+
+    .rodape__conteudo{
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .rodape__logo img{
+        width: 150px;
+    }
+
+    .rodape__lista li{
+        font-size: 0.8rem;
+    }
+
+    .rodape__rede{
+        width: 38px;
+        height: 38px;
+    }
+
+    .rodape__rede-img{
+        width: 18px;
+        height: 18px;
+    }
+}
